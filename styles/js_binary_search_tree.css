@@ -41,25 +41,48 @@
 }
 
 /* CSS for the container and child nodes */
-.tree-container {
-  text-align: center;
-  padding-top: 2rem;
+#treeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 300px;
+  width: 100%;
+  background: #f0f8ff;
+  padding: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+.node, .child {
+  display: flex; 
+  justify-content: space-between; 
 }
 
 .node {
-  display: inline-block;
-  margin: 0 1rem;
-  width: 2rem;
-  line-height: 2rem;
-  border: 1px solid #000;
-  border-radius: 50%;
-  background-color: #fff;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  background-color: #6495ed;
+  text-align: center;
+  border-radius: 4px;
+  color: white;
+  font-size: 14px;
 }
 
 .child {
-  display: block;
-  margin-top: 1.5rem;
-  border-width: 0 1px;
-  border-style: solid;
-  border-color: #000;
+  flex-direction: row;
+  margin: 5px;
+  padding: 5px;
+  background-color: #add8e6;
+  border-radius: 2px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
 }
+
+
+.node__element--highlight {
+  background-color: #ffa07a;
+  transition: background-color var(--animation-timing) ease-in-out;
+}
+
