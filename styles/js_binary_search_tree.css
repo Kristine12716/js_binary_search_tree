@@ -39,3 +39,36 @@
     color: #212529;
   }
 }
+
+/* CSS for the container and child nodes */
+.tree {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.node {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  border: 1px solid #000;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.child {
+  position: absolute;
+  width: 100%;
+  top: calc(50% + 40px);
+}
+
+.left {
+  left: 0;
+}
+
+.right {
+  right: 0;
+}

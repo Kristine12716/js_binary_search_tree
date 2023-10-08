@@ -14,7 +14,7 @@ const defaultCompareNumberFn = (a, b) => {
 
 class TreeNode {
   constructor(value, parent) {
-    this.value = value.toString();
+    this.value = value;
     this.parent = parent || null;
     this.left = null;
     this.right = null;
@@ -132,6 +132,3 @@ class BinarySearchTree {
     return traversed;
   }
 }
-
-
-export default BinarySearchTree;

@@ -1,4 +1,4 @@
-export const defaultBSTUIConfig = {
+const defaultBSTUIConfig = {
   HIGHLIGHT_CLASS: 'node__element--highlight',
   HIGHLIGHT_TIME: 300,
 };
@@ -189,5 +189,3 @@ class BinarySearchTreeUI {
     resetBtn.addEventListener('click', this.onResetBtnClick.bind(this));
   }
 }
-
-export default BinarySearchTreeUI;

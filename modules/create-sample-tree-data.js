@@ -1,4 +1,4 @@
-export default function createSampleTreeData(tree) {
+function createSampleTreeData(tree) {
     tree.insert(11);
     tree.insert(7);
     tree.insert(5);
