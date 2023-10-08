@@ -114,7 +114,7 @@ class BinarySearchTree {
     return clone;
   }
   search(value) {
-    return this.postOrderTraverse().find((node) => node.value === value);
+    return this.postOrderTraverse().find((node) => node.value == value);
   }
 
 
