@@ -116,6 +116,22 @@ class BinarySearchTree {
   search(value) {
     return this.postOrderTraverse().find((node) => node.value === value);
   }
+
+
+  postOrderTraverse(node = this.root, traversed = []) {
+    if (node === null) {
+      return traversed;
+    }
+    if (node.left) {
+      traversed.push(...this.postOrderTraverse(node.left));
+    }
+    if (node.right) {
+      traversed.push(...this.postOrderTraverse(node.right));
+    }
+    traversed.push(node);
+    return traversed;
+  }
 }
+
 
 export default BinarySearchTree;
