@@ -41,34 +41,25 @@
 }
 
 /* CSS for the container and child nodes */
-.tree {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+.tree-container {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 .node {
-  position: relative;
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
-  text-align: center;
+  display: inline-block;
+  margin: 0 1rem;
+  width: 2rem;
+  line-height: 2rem;
   border: 1px solid #000;
   border-radius: 50%;
   background-color: #fff;
 }
 
 .child {
-  position: absolute;
-  width: 100%;
-  top: calc(50% + 40px);
-}
-
-.left {
-  left: 0;
-}
-
-.right {
-  right: 0;
+  display: block;
+  margin-top: 1.5rem;
+  border-width: 0 1px;
+  border-style: solid;
+  border-color: #000;
 }
