@@ -1,0 +1,65 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.app-container {
+    max-width: 600px;
+    margin: auto;
+    background-color: #f2f2f2;
+    padding: 30px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    max-width: 200px;
+    margin: 0 auto;
+}
+
+.box-item {
+    border: 1px solid black;
+    padding: 10px;
+    margin-bottom: 10px;
+    transition: all 0.2s ease;
+}
+
+.box-item.peeking {
+    background-color: #333;
+    color: white;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    background: none;
+    border: none;
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+}
