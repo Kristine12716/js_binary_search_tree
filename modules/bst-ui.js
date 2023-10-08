@@ -141,15 +141,6 @@ class BinarySearchTreeUI {
     this.highlightNode(node);
   }
 
-  onMinValueBtnClick() {
-    const node = this.tree.min();
-    if (node) {
-      this.highlightNode(node);
-    } else {
-      alert('Node not found');
-    }
-  }
-
   onSearchBtnClick() {
     const searchVal = prompt('Enter the node value to search in the tree');
     const searchedNode = this.tree.search(searchVal);
@@ -171,21 +162,22 @@ class BinarySearchTreeUI {
       this.onRemoveElementBtnClick.bind(this)
     );
     insert.addEventListener('click', this.onInsertBtnClick.bind(this));
-    minValueBtn.addEventListener('click', this.onMinValueBtnClick.bind(this));
+    // minValueBtn.addEventListener('click', this.onMinValueBtnClick.bind(this));
     searchBtn.addEventListener('click', this.onSearchBtnClick.bind(this));
-    maxValueBtn.addEventListener('click', this.onMaxValueBtnClick.bind(this));
-    preOrderTravBtn.addEventListener(
-      'click',
-      this.onPreOrderTravBtnClick.bind(this)
-    );
-    inOrderTravBtn.addEventListener(
-      'click',
-      this.onInOrderTravBtnClick.bind(this)
-    );
-    postOrderTravBtn.addEventListener(
-      'click',
-      this.onPostOrderTravBtnClick.bind(this)
-    );
-    resetBtn.addEventListener('click', this.onResetBtnClick.bind(this));
+    this.render(this.tree.root);
+    // maxValueBtn.addEventListener('click', this.onMaxValueBtnClick.bind(this));
+    // preOrderTravBtn.addEventListener(
+    //   'click',
+    //   this.onPreOrderTravBtnClick.bind(this)
+    // );
+    // inOrderTravBtn.addEventListener(
+    //   'click',
+    //   this.onInOrderTravBtnClick.bind(this)
+    // );
+    // postOrderTravBtn.addEventListener(
+    //   'click',
+    //   this.onPostOrderTravBtnClick.bind(this)
+    // );
+    // resetBtn.addEventListener('click', this.onResetBtnClick.bind(this));
   }
 }
